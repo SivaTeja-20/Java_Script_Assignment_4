@@ -1,6 +1,9 @@
 //Day calculation from date using "Zeller’s" Rule
        
 function dayy(d,m,y){
+    //According to Zeller’s rule the month is counted as follows:
+    //March is 1, April is 2….. January is 11 and February is 12.
+    //So the year starts from March and ends with February. So if the given date has month as January or February subtract 1 from the year. 
     var month = [0,11,12,1,2,3,4,5,6,7,8,9,10];
     //m is the month number.
       if (month[m]==11 || month[m]==12){
