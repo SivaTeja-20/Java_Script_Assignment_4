@@ -34,10 +34,10 @@ function switch1(data){
     var day = ""
     switch (data) {
         case 0:
-            day = "sunday";
+            day = "Sunday";
             break;
         case 1:
-            day = "monday";
+            day = "Monday";
             break;
         case 2:
             day = "Tuesday";
