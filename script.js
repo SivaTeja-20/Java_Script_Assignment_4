@@ -24,7 +24,7 @@ function dayy(d,m,y){
     var dat = Math.floor( d+ ( (  (13*month[m])-1  )/5  ) + A  +   Math.floor(A/4)  +   Math.floor(B/4)  -  2*B  )
     var data = dat%7
    
-    if (data>0){
+    if (data>=0){
           console.log(switch1(data))
     }else{
        console.log(switch1(data+7))
@@ -62,3 +62,6 @@ function switch1(data){
 }
 
 console.log(dayy(9,2,2022))
+
+
+
